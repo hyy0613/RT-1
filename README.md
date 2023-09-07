@@ -16,6 +16,10 @@ You can view the google source code here: [robotics_transformer](https://github.
 
 **Language-table** dataset: [language_table_dataset](https://github.com/google-research/language-table)
 
+We are now using the **languaget_table** datasetloader, the **RT-1** dataloader will subsequent upload.
+
+Both datasets are in [RLDS](https://arxiv.org/abs/2111.02767) format
+
 ### Installation
 Clone the repo
 ```bash
@@ -29,23 +33,12 @@ cd tensor2robot/proto
 protoc -I=./ --python_out=`pwd` tensor2robot/t2r.proto
 
 # Optional: Create a conda env,you can also follow google's instructions for configuration
+cd ../..
 conda env create -f RT-1/rt_environment.yaml
 
 # Run distributed code
-
+python -m robotics_transformer.distribute_train
 ```
-
-### Running Tests
-
-To run RT-1 tests, you can clone the git repo and run
-[bazel](https://bazel.build/):
-
-```bash
-git clone https://github.com/google_research/robotics_transformer.git
-cd robotics_transformer
-bazel test ...
-```
-
 ### Using trained checkpoints
 Checkpoints are included in trained_checkpoints/ folder for three models:
 1. [RT-1 trained on 700 tasks](trained_checkpoints/rt1main)
@@ -53,7 +46,6 @@ Checkpoints are included in trained_checkpoints/ folder for three models:
 3. [RT-1 jointly trained on sim and real data](trained_checkpoints/rt1simreal)
 
 They are tensorflow SavedModel files. Instructions on usage can be found [here](https://www.tensorflow.org/guide/saved_model)
-
 
 ## Future Releases
 
@@ -65,22 +57,17 @@ More components may come in future releases.
 The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
-## 新增内容
-本工程来自于google的robotics transformer工作，在此基础上增加了:
-    
-    1,读取rlds数据，以language table为例
-    2,增加分布式训练代码
-   
-## 训练
-    step1, 下载language_table数据, 见https://github.com/google-research/language-table
-    step2, 下载Universal Sentence Encoder模型，将数据集中的文本(UTF-8)转化成USE embedding，依然是RLDS格式
-    step3, 设置distribute_train.py里的变量
-    step4, 开启训练 python distribute_train.py
+## Code specification
 
-## 未来工作
-    1, 使用RT1开源的数据集进行训练，编写相应数据加载代码;
-    2, 使用梯度累积，混合精度训练，增加单卡batch_size;
-    3, 融合更多传感器信息，如深度等;
-    抛砖引玉，欢迎大家提pull request
+* 此项目代码来源于google的[robotics_transformer](https://github.com/google-research/robotics_transformer)论文代码
 
+* 训练前请修改`distribute_train.py`中的参数，`tensorflow`版本`2.12`或`2.13`目前测试均可运行
+## 近期将要完成工作
+* 添加Universal Sentence Encoder模型数据集处理代码
+  
+* 添加**RT-1**数据导入代码，目前导入数据集为**language-table-dataset**
+
+* 参考**language-table**代码添加仿真环境
+
+* 添加项目代码详细tutorial
    
