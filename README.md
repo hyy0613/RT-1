@@ -70,5 +70,5 @@ license.
 
 * 参考**language-table**代码添加仿真环境
 
-* 添加项目代码详细tutorial
+* 添加项目代码详细`tutorial`
    
