@@ -58,6 +58,7 @@ The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
 ## Code specification
+<img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/e91556c4-4a12-4151-819a-1418cbed3080">
 
 * 此项目代码来源于google的[robotics_transformer](https://github.com/google-research/robotics_transformer)论文代码
 
