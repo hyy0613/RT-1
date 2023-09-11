@@ -57,6 +57,20 @@ More components may come in future releases.
 The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
+## 使用方法
+1.下载**language-table**数据集，详见上文**Downloading the dataset**
+
+2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
+
+3.运行**distribute_train.py**,保存模型
+
+4.将模型预测输出的**action**，通过仿真环境中的**step**方法与环境连接，进行交互，仿真环境详见[language_table](https://github.com/google-research/language-table)。
+
+
+
+
+
+
 ## Code specification
 <img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/e91556c4-4a12-4151-819a-1418cbed3080">
 
