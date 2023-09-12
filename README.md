@@ -85,4 +85,7 @@ license.
 * 参考**language-table**代码添加仿真环境
 
 * 添加项目代码详细`tutorial`
+
+## contact
+抛砖引玉，如果对此项目的使用有问题或者修改建议，欢迎邮件联系120l021822@stu.hit.edu.cn
    
