@@ -62,7 +62,7 @@ license.
 
 2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
 
-3.运行**distribute_train.py**,保存模型
+3.运行前需要解决`tensorflow`版本兼容性问题，参见我的回答[contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690),运行**distribute_train.py**,保存模型
 
 4.将模型预测输出的**action**，通过仿真环境中的**step**方法与环境连接，进行交互，仿真环境详见[language_table](https://github.com/google-research/language-table)。
 
