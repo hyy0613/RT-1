@@ -2,6 +2,9 @@
 This is the completion of google's rt-1 project code and can run directly.
 
 You can view the google source code here: [robotics_transformer](https://github.com/google-research/robotics_transformer)
+<p align="center">
+<img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/0880b88b-fb3c-4f3d-a218-4b104a72a838">
+</p>
 
 ## Features
 
@@ -22,6 +25,8 @@ Both datasets are in [RLDS](https://arxiv.org/abs/2111.02767) format
 
 ### Installation
 Clone the repo
+
+Before running, you need to resolve the tensorflow version compatibility issues in [tensor2robot](https://github.com/google-research/tensor2robot), see my answer [contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690)
 ```bash
 git clone https://github.com/YiyangHuang-work/RT-1
 # clone the repo rt-1 used
@@ -58,6 +63,8 @@ The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
 ## 使用方法
+![image](https://github.com/YiyangHuang-work/RT-1/assets/75081077/0880b88b-fb3c-4f3d-a218-4b104a72a838)
+
 1.下载**language-table**数据集，详见上文**Downloading the dataset**
 
 2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
@@ -85,7 +92,8 @@ license.
 * 参考**language-table**代码添加仿真环境
 
 * 添加项目代码详细`tutorial`
-
-## contact
-项目将持续完善更新，抛砖引玉，如果对此项目的使用有问题或者修改建议，欢迎邮件联系120l021822@stu.hit.edu.cn
+## Special thanks
+Special thanks to these people for their help in this project: [oym1994](https://github.com/oym1994)
+## Contact
+The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email 120l021822@stu.hit.edu.cn
    
