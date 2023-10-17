@@ -63,7 +63,6 @@ The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
 ## 使用方法
-![image](https://github.com/YiyangHuang-work/RT-1/assets/75081077/0880b88b-fb3c-4f3d-a218-4b104a72a838)
 
 1.下载**language-table**数据集，详见上文**Downloading the dataset**
 
