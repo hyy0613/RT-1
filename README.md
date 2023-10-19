@@ -3,7 +3,7 @@ This is the completion of google's rt-1 project code and can run directly.
 
 You can view the google source code here: [robotics_transformer](https://github.com/google-research/robotics_transformer)
 <p align="center">
-<img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/0880b88b-fb3c-4f3d-a218-4b104a72a838">
+<img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/9ff86f52-b4aa-40a9-9471-16e6eb28b04d">
 </p>
 
 ## Features
@@ -92,7 +92,7 @@ license.
 
 * 添加项目代码详细`tutorial`
 ## Special thanks
-Special thanks to these people for their help in this project: [oym1994](https://github.com/oym1994)
+Special thanks to these people for their help in this project:[oym1994](https://github.com/oym1994),
 ## Contact
 The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email 120l021822@stu.hit.edu.cn
    
