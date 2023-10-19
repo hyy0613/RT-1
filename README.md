@@ -84,13 +84,8 @@ license.
 
 * 训练前请修改`distribute_train.py`中的参数，`tensorflow`版本`2.12`或`2.13`目前测试均可运行
 ## 近期将要完成工作
-* 添加Universal Sentence Encoder模型数据集处理代码
-  
-* 添加**RT-1**数据导入代码，目前导入数据集为**language-table-dataset**
+* add evaluation tutorial
 
-* 参考**language-table**代码添加仿真环境
-
-* 添加项目代码详细`tutorial`
 ## Special thanks
 Special thanks to these people for their help in this project:[oym1994](https://github.com/oym1994),[kpertsch](https://github.com/kpertsch)
 ## Contact
