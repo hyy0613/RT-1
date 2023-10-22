@@ -98,8 +98,8 @@ def create_model(args):
     action_spec.terminate_episode = tensor_spec.BoundedTensorSpec(
         (2,), dtype=tf.int32, minimum=0, maximum=1, name='terminate_episode')
 
-    action_spec.effector_target_translation = tensor_spec.BoundedTensorSpec(
-        (2,), dtype=tf.float32, minimum=-0.3, maximum=0.6, name='effector_target_translation')
+    action_spec.action = tensor_spec.BoundedTensorSpec(
+        (2,), dtype=tf.float32, minimum=-0.03, maximum=0.03, name='action')
 
     network = transformer_network.TransformerNetwork(
         input_tensor_spec=state_spec,
@@ -114,7 +114,7 @@ def create_model(args):
         time_sequence_length=time_sequence_length,
         crop_size=236,
         use_token_learner=True,
-        action_order=['terminate_episode', 'effector_target_translation'])
+        action_order=['terminate_episode', 'action'])
     return network
 
 ''' 设置 TF_CONFIG 环境变量,为每个集群设置对应的文件'''
