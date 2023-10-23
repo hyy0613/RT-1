@@ -30,6 +30,7 @@ Before running, you need to resolve the tensorflow version compatibility issues 
 ```bash
 git clone https://github.com/YiyangHuang-work/RT-1
 # clone the repo rt-1 used
+cd RT-1
 git clone https://github.com/google-research/tensor2robot
 
 # Install protoc and compile the protobufs.
