@@ -1,4 +1,7 @@
-"""读取RLDS数据集，详见：https://github.com/google-research/rlds  数据读取代码参考https://github.com/google-research/language-table"""
+"""
+读取RLDS数据集，详见：https://github.com/google-research/rlds  数据读取代码参考https://github.com/google-research/language-table
+此部分代码在oym1994的仓库基础上修改https://github.com/oym1994/robotics_transformer_tensorflow
+"""
 
 import dataclasses
 import functools
@@ -193,8 +196,8 @@ class TransformDict(preprocess_spec.RandomMapTransform):
         """Applies all distortions."""
         action_lable = {
             "terminate_episode": tf.one_hot(tf.cast(features["is_terminal"], dtype=tf.int32), depth=2, dtype=tf.int32),
-            "effector_target_translation": features["observation"]["effector_target_translation"]}
+            "action": features["action"]}
         train_observation = {"image": features["observation"]["rgb"],
-                             "natural_language_embedding": tf.cast(features['observation']['instruction'],dtype=tf.float32)}
+                             "natural_language_embedding": features['observation']['instruction']}
         features = {"action_lable": action_lable, "train_observation": train_observation}
         return features
