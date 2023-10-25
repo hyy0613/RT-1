@@ -2,7 +2,7 @@
 
 In order to use this part of the code, you need to follow these steps
 
-1.  Modify the dataset location in the `rlds_np_save`,and run this program then you will get the folder named `data`
+1. Modify the dataset location in the `rlds_np_save`,and run this program then you will get the folder named `data`
 
    ```bash
    python rlds_np_save
