@@ -1,4 +1,4 @@
-## Evaluation
+## Evaluation Tutorial
 This code is source from [language_table](https://github.com/google-research/language-table),we use the environment to evaluate our model.
 ## Getting Started
 1. Modify the work and config directories in the `evaluation.py`
