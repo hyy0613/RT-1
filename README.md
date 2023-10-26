@@ -30,8 +30,6 @@ You can view the google source code here: [robotics_transformer](https://github.
 
 **Language-table** dataset: [language_table_dataset](https://github.com/google-research/language-table)
 
-We are now using the **languaget_table** datasetloader, the **RT-1** dataloader will subsequent upload.
-
 Both datasets are in [RLDS](https://arxiv.org/abs/2111.02767) format
 
 ### Installation
