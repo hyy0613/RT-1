@@ -145,24 +145,11 @@ def evaluate_checkpoint(workdir, config):
 def main(argv):
   if len(argv) > 1:
     raise app.UsageError("Too many command-line arguments.")
-  # frame_list = []
-  # for i in range(10):
-  #     a = np.random.random((456,256,3))
-  #     frame_list.append(a)
-  # imageio.mimsave("/adddisk1/huangyiyang/output.mp4",frame_list)
-  # args = get_args()
-  # train_ds = create_train_dataset(args,1)
-  # train_example = train_ds.take(1).get_single_element()
-  # print(train_example['train_observation'])
-  with tf.device('/gpu:3'):
       evaluate_checkpoint(
           workdir=_WORKDIR.value,
           config=_CONFIG.value,
       )
-  # model,network_state = get_ckpt_model()
-  # result,_ = model(train_example['train_observation'],step_type=None, network_state=network_state, training=False)
-  # print(result)
-
+      
 if __name__ == "__main__":
     app.run(main)
 
