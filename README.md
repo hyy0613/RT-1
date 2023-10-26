@@ -6,15 +6,15 @@ You can view the google source code here: [robotics_transformer](https://github.
 <img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/14f44158-e264-447f-bfd4-c8dccd03abe2">
 </p>
 
-## 使用方法
+## Using Method
 
-1.下载**language-table**数据集，详见上文**Downloading the dataset**
+1. 下载**language-table**数据集，详见下文**Downloading the dataset**，下载**Universal Sentence Encoder**模型
 
-2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
+2. 通过[language_table_data_reconstruction](https://github.com/YiyangHuang-work/RT-1/tree/main/language_table_data_reconstruction)文件夹下代码对**instrucion**进行编码，原数据集为**UTF-8**编码格式
 
-3.运行前需要解决`tensorflow`版本兼容性问题，参见我的回答[contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690),运行**distribute_train.py**,保存模型
+3. 运行前需要解决`tensorflow`版本兼容性问题，参见我的回答[contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690),运行**distribute_train.py**,保存模型
 
-4.将模型预测输出的**action**，通过仿真环境中的**step**方法与环境连接，进行交互，仿真环境详见[language_table](https://github.com/google-research/language-table)。
+4. 使用[language_table](https://github.com/YiyangHuang-work/RT-1/tree/main/language_table)文件夹下代码进行测试，仿真环境详见[language_table](https://github.com/google-research/language-table)，整体流程如上图所示
 
 
 ## Features
