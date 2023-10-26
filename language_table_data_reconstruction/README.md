@@ -38,16 +38,16 @@ In order to use this part of the code, you need to follow these steps
    ├── ...
    ```
 
-3. Next, create the `conda` environment and build the dataset using the `tfds` command in the `language_table_use` directory
-
-   ```bash
-   # create the environment
-   conda env create -f environment_ubuntu.yml
-   # activate the conda environment
-   conda activate rlds_env
-   # tfds build
-   tfds build --data_dir 'Fill in the data final storage path here'
-   ```
+3. Download the [Universial Sentence Encoder](https://www.tensorflow.org/hub/tutorials/semantic_similarity_with_tf_hub_universal_encoder) from tensorflow
+4.  Next, create the `conda` environment and build the dataset using the `tfds` command in the `language_table_use` directory
+    ```bash
+    # create the environment
+    conda env create -f environment_ubuntu.yml
+    # activate the conda environment
+    conda activate rlds_env
+    # tfds build
+    tfds build --data_dir 'Fill in the data final storage path here'
+    ```
 
    ## Acknowledgements 
 
