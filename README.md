@@ -6,6 +6,17 @@ You can view the google source code here: [robotics_transformer](https://github.
 <img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/14f44158-e264-447f-bfd4-c8dccd03abe2">
 </p>
 
+## 使用方法
+
+1.下载**language-table**数据集，详见上文**Downloading the dataset**
+
+2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
+
+3.运行前需要解决`tensorflow`版本兼容性问题，参见我的回答[contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690),运行**distribute_train.py**,保存模型
+
+4.将模型预测输出的**action**，通过仿真环境中的**step**方法与环境连接，进行交互，仿真环境详见[language_table](https://github.com/google-research/language-table)。
+
+
 ## Features
 
 * Film efficient net based image tokenizer backbone
@@ -63,31 +74,7 @@ More components may come in future releases.
 The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
-## 使用方法
-
-1.下载**language-table**数据集，详见上文**Downloading the dataset**
-
-2.下载**Universal Sentence Encoder**模型，对**instrucion**进行编码，原数据集为**UTF-8**编码格式
-
-3.运行前需要解决`tensorflow`版本兼容性问题，参见我的回答[contrib_answer](https://github.com/google-research/robotics_transformer/issues/1#issuecomment-1673121690),运行**distribute_train.py**,保存模型
-
-4.将模型预测输出的**action**，通过仿真环境中的**step**方法与环境连接，进行交互，仿真环境详见[language_table](https://github.com/google-research/language-table)。
-
-
-
-
-
-
-## Code specification
-<img width="715" alt="RT-1" src="https://github.com/YiyangHuang-work/RT-1/assets/75081077/e91556c4-4a12-4151-819a-1418cbed3080">
-
-* 此项目代码来源于google的[robotics_transformer](https://github.com/google-research/robotics_transformer)论文代码
-
-* 训练前请修改`distribute_train.py`中的参数，`tensorflow`版本`2.12`或`2.13`目前测试均可运行
-## 近期将要完成工作
-* add evaluation tutorial
-
-## Special thanks
+## Acknowledgements
 Special thanks to these people for their help in this project:[oym1994](https://github.com/oym1994),[kpertsch](https://github.com/kpertsch)
 ## Contact
 The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email 120l021822@stu.hit.edu.cn
