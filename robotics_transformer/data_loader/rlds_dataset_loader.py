@@ -1,6 +1,5 @@
 """
 读取RLDS数据集，详见：https://github.com/google-research/rlds  数据读取代码参考https://github.com/google-research/language-table
-此部分代码在oym1994的仓库基础上修改https://github.com/oym1994/robotics_transformer_tensorflow
 """
 
 import dataclasses
