@@ -3,7 +3,6 @@ robotic transformer(https://github.com/google-research/robotics_transformer)的�
 采用tensorflow2的distribute.MirroredStrategy(https://www.tensorflow.org/api_docs/python/tf/distribute/MirroredStrategy)进行分布式训练，使用加载rlds(https://github.com/google-research/rlds)数据的方式进行数据的读取
 使用方法：
     python -m robotics_transformer.distribute_train --args = param, 其中args见代码中的get_args()
-此部分代码基于oym1994的仓库修改 https://github.com/oym1994/robotics_transformer_tensorflow
 """
 import os
 from robotics_transformer import transformer_network
