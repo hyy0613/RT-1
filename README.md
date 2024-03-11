@@ -17,6 +17,10 @@ You can view the google source code here: [robotics_transformer](https://github.
 4. 使用[language_table](https://github.com/YiyangHuang-work/RT-1/tree/main/language_table)文件夹下代码进行测试，仿真环境详见[language_table](https://github.com/google-research/language-table)，整体流程如上图所示
 
 
+
+https://github.com/hyy0613/RT-1/raw/main/assets/75081077/a5d851f6-11d9-4d22-8535-e6897edccaa9
+
+
 ## Features
 
 * Film efficient net based image tokenizer backbone
