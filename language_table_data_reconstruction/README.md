@@ -2,6 +2,7 @@
 
 In order to use this part of the code, you need to follow these steps
 
+If you can't access google, there will be a network error, **just wait**, and after a certain number of attempts will skip this step
 1. Modify the dataset location in the `rlds_np_save`,and run this program then you will get the folder named `data`
 
    ```bash
