@@ -79,5 +79,5 @@ license.
 ## Acknowledgements
 Special thanks to these people for their help in this project:[kpertsch](https://github.com/kpertsch)
 ## Contact
-The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email 120l021822@stu.hit.edu.cn
+The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email huangyiyang24@mails.ucas.ac.cn
    
