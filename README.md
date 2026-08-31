@@ -77,7 +77,9 @@ The Robotics Transformer library is licensed under the terms of the Apache
 license.
 
 ## Acknowledgements
-Special thanks to these people for their help in this project:[oym1994](https://github.com/oym1994)[kpertsch](https://github.com/kpertsch)
+Special thanks to these people for their help in this project:
+- [oym1994](https://github.com/oym1994)
+- [kpertsch](https://github.com/kpertsch)
 ## Contact
 The project will continue to improve and update, if you have any questions about the use of this project or suggestions for modification, please contact us by email huangyiyang24@mails.ucas.ac.cn
    
